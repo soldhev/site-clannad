@@ -37,6 +37,8 @@ nextButton.addEventListener("click", () => {
   update(1);
 });
 
+aa
+
 clearInterval(timer);
 timer = setInterval(() => {
   update(1);
