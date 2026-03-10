@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Death Note Store</title>
 
-  <!--
-    ════════════════════════════════════════
-    FONTS — Google Fonts
-    Usamos duas fontes:
-    · "Inter" → corpo do texto, limpa e legível
-    · "Playfair Display" → títulos, elegante
-    ════════════════════════════════════════
-  -->
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!--
-    ════════════════════════════════════════
-    HEADER — cabeçalho fixo no topo
-    Contém: logo | navegação | botão entrar
-    position: fixed → fica visível durante scroll
-    ════════════════════════════════════════
-  -->
+
   <header id="header">
     <a href="index.html" class="logo">DeathNote<span>Store</span></a>
 
@@ -42,13 +34,7 @@
   </header>
 
 
-  <!--
-    ════════════════════════════════════════
-    HERO — primeira seção, impacto visual
-    Ocupa 100vh (toda a tela)
-    Usa CSS para criar o fundo com gradiente
-    ════════════════════════════════════════
-  -->
+
   <section class="hero">
     <div class="hero-content">
       <p class="hero-label">Coleção Oficial — 2026</p>
@@ -59,18 +45,12 @@
         <a href="cadastro.html" class="btn-ghost">Criar Conta</a>
       </div>
     </div>
-    <!-- Decoração visual: número "L" gigante no fundo -->
+
     <div class="hero-deco">L</div>
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    DESTAQUES — 3 cards informativos
-    Mostra os diferenciais da loja
-    Usa CSS Grid com 3 colunas
-    ════════════════════════════════════════
-  -->
+
   <section class="highlights">
     <div class="container">
       <div class="hl-grid">
@@ -94,13 +74,7 @@
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    PRODUTOS EM DESTAQUE
-    Exibe 4 produtos na home
-    Cards clicáveis que levam para produtos.html
-    ════════════════════════════════════════
-  -->
+
   <section class="featured" id="destaque">
     <div class="container">
       <div class="section-head">
@@ -152,12 +126,7 @@
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    BANNER — faixa de destaque central
-    Chama atenção para promoção ou CTA
-    ════════════════════════════════════════
-  -->
+
   <section class="banner">
     <div class="container">
       <p class="banner-label">Oferta limitada</p>
@@ -168,32 +137,22 @@
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    FAQ — perguntas frequentes
-    Usa JavaScript para abrir/fechar respostas
-    Padrão "accordion" (acordeão)
-    ════════════════════════════════════════
-  -->
+
   <section class="faq" id="faq">
     <div class="container">
       <h2>Perguntas Frequentes</h2>
 
       <div class="faq-list">
 
-        <!--
-          Cada item do FAQ tem:
-          · .faq-q → a pergunta (clicável)
-          · .faq-a → a resposta (escondida por padrão)
-          O JS adiciona/remove a classe "open" ao clicar
-        -->
+
         <div class="faq-item">
           <button class="faq-q" onclick="toggleFaq(this)">
             Os produtos são originais?
             <span class="faq-arrow">↓</span>
           </button>
           <div class="faq-a">
-            Sim. Trabalhamos apenas com distribuidores oficiais. Todos os produtos acompanham nota fiscal e certificado de autenticidade quando aplicável.
+            Sim. Trabalhamos apenas com distribuidores oficiais. Todos os produtos acompanham nota fiscal e certificado
+            de autenticidade quando aplicável.
           </div>
         </div>
 
@@ -203,7 +162,8 @@
             <span class="faq-arrow">↓</span>
           </button>
           <div class="faq-a">
-            De 5 a 12 dias úteis para todo o Brasil via Correios ou transportadora. Regiões Sul e Sudeste costumam receber em até 7 dias úteis.
+            De 5 a 12 dias úteis para todo o Brasil via Correios ou transportadora. Regiões Sul e Sudeste costumam
+            receber em até 7 dias úteis.
           </div>
         </div>
 
@@ -223,7 +183,8 @@
             <span class="faq-arrow">↓</span>
           </button>
           <div class="faq-a">
-            Você tem 30 dias corridos a partir da entrega para solicitar troca ou devolução. O produto precisa estar sem uso e na embalagem original.
+            Você tem 30 dias corridos a partir da entrega para solicitar troca ou devolução. O produto precisa estar sem
+            uso e na embalagem original.
           </div>
         </div>
 
@@ -232,12 +193,7 @@
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    TRABALHE CONOSCO
-    Formulário simples de candidatura
-    ════════════════════════════════════════
-  -->
+
   <section class="trabalhe" id="trabalhe">
     <div class="container two-col">
       <div class="trabalhe-text">
@@ -260,18 +216,14 @@
           <option>Gestor de Estoque</option>
         </select>
         <textarea placeholder="Conte um pouco sobre você..." rows="4"></textarea>
-        <button class="btn-primary" onclick="alert('Currículo enviado! Entraremos em contato em breve.')">Enviar Currículo</button>
+        <button class="btn-primary" onclick="alert('Currículo enviado! Entraremos em contato em breve.')">Enviar
+          Currículo</button>
       </div>
     </div>
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    CONTATOS
-    Informações de contato + mapa Google Maps
-    ════════════════════════════════════════
-  -->
+
   <section class="contatos" id="contatos">
     <div class="container two-col">
       <div>
@@ -286,14 +238,12 @@
         <!-- Links redes sociais -->
         <div class="social-row">
           <a href="https://github.com/soldhev" target="_blank" class="soc-link">GitHub</a>
-          <a href="https://www.linkedin.com/in/carlos-eduardo-rocha-809394375/" target="_blank" class="soc-link">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/carlos-eduardo-rocha-809394375/" target="_blank"
+            class="soc-link">LinkedIn</a>
         </div>
       </div>
       <div class="map-wrap">
-        <!--
-          iframe do Google Maps
-          Embed gratuito — basta copiar o link do Maps
-        -->
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6388!3d-23.5489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzU2LjAiUyA0NsKwMzgnMTkuNiJX!5e0!3m2!1spt-BR!2sbr"
           allowfullscreen loading="lazy" title="Localização">
@@ -303,12 +253,7 @@
   </section>
 
 
-  <!--
-    ════════════════════════════════════════
-    FOOTER — rodapé
-    Copyright + links rápidos
-    ════════════════════════════════════════
-  -->
+
   <footer>
     <div class="container footer-inner">
       <p class="footer-logo">DeathNote<span>Store</span></p>
@@ -322,13 +267,7 @@
   </footer>
 
 
-  <!--
-    ════════════════════════════════════════
-    VLIBRAS — Acessibilidade em Libras
-    Widget obrigatório em sites brasileiros
-    O script carrega o botão automaticamente
-    ════════════════════════════════════════
-  -->
+
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -339,40 +278,24 @@
   <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 
 
-  <!--
-    ════════════════════════════════════════
-    SCRIPT PRINCIPAL
-    Lógica do header ao rolar + FAQ accordion
-    ════════════════════════════════════════
-  -->
+
   <script>
-    /*
-      HEADER SCROLL
-      Adiciona a classe "scrolled" ao header
-      quando o usuário rola mais de 50px
-      O CSS usa essa classe para mudar o fundo
-    */
+
     window.addEventListener('scroll', () => {
       const h = document.getElementById('header');
       h.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    /*
-      FAQ ACCORDION
-      Ao clicar numa pergunta:
-      1. Fecha todas as outras abertas
-      2. Abre/fecha a pergunta clicada
-      Usa classList.toggle para adicionar/remover "open"
-    */
+
     function toggleFaq(btn) {
       const item = btn.parentElement;
       const wasOpen = item.classList.contains('open');
-      // fecha todos
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      // abre o clicado (se não estava aberto)
+
       if (!wasOpen) item.classList.add('open');
     }
   </script>
 
 </body>
+
 </html>
